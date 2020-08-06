@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+.index {
+  padding: 1rem;
+  box-sizing: border-box;
+  min-height: 30rem;
+}
+.index-aside {
+  width: 26rem;
+  margin-right: 1rem;
+  flex-grow: 0;
+  box-sizing: border-box;
+}
+.index-main {
+  width: 0;
+  flex-grow: 1;
+}
+.index-total {
+  height: 8.5rem;
+  flex-grow: 0;
+  margin-top: 1rem;
+
+}
+.index-total .h-l {
+  margin-top: 1rem;
+}
+.index-total .detail {
+  height: 3rem;
+  text-align: center;
+  margin-top: 1.3rem;
+  line-height: 0.9rem;
+}
+.index-total .detail .value {
+  color: #49CA8C;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  margin-top: 0.8rem;
+}
+.index-total .detail .v-l {
+  height: 70%;
+}
+.index-scroller {
+  max-height: 100%;
+  overflow: auto;
+}
+.index-section {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  height: 100%;
+}
+.index-section * {
+  height: auto;
+}
+.index-title {
+  font-weight: bold;
+  white-space: nowrap;
+}
+.index-title + .index-scroller {
+  margin-top: 1.5rem;
+}
+.index-title i{
+  position: relative;
+  margin-right: 1rem;
+}
+.index-title i::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0.3rem;
+  left: 0;
+  top: 0;
+  background-color: #FC9A4A;
+}
+.index-search {
+  padding: 0.6rem 0.9rem;
+  border: 0;
+  outline: 0;
+  box-shadow: inset 0 0 0 1px #E5E5E5;
+  border-radius: 0.3rem;
+}
+.index-table {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+.index-table .scroller-container {
+  position: absolute;
+  top: 5rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  margin-top: 0;
+}
+.index-section .table {
+  width: 100%;
+  box-sizing: content-box;
+}
+.index .table th .scale-text,
+.index .table td .scale-text {
+  display: inline-block;
+}
+.index .table th{
+  background-color: #F8F8F8;
+  vertical-align: center;
+  font-weight: bold;
+  height: 3.4rem;
+  margin: 0;
+  border: 0;
+}
+.index .table td {
+  vertical-align: center;
+  height: 3.7rem;
+  margin: 0;
+  border: 0;
+  text-align: center;
+}
+.index .table th:first-child {
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+.index .table th:last-child {
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+.index .table .circle-shape {
+  width: 1.8rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  background-color: #49CA8C;
+  border-radius: 0.9rem;
+  text-align: center;
+  color: white;
+  display: inline-block;
+}
+.index-section .h-l {
+  height: 0.1rem;
+}
+
+.color-999 {
+  color: #999;
+}
+.index-dash .scroller-container {
+  height: 100%;
+}
+.index-guns {
+  justify-content: flex-start;
+}
+.index-guns .item {
+  width: 20rem;
+  height: 10rem;
+  box-shadow: 0 0.3rem 0.9rem 0 rgba(217,217,214,0.6);
+  border-radius: 0.4rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 1rem;
+  box-sizing: border-box;
+  padding: 1.4rem 2rem 1rem 2.4rem;
+}
+.index-guns .item > .flex-column {
+  height: 100%;
+}
+.index-guns .item .count {
+  font-size: 1.1rem;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.index-guns .item .count > * {
+  flex-grow: 0;
+}
+.index-guns .item .item-header {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.index-guns .item .item-foot {
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.index-guns .item .item-foot > .flex-row {
+  height: 100%;
+  align-items: flex-end;
+  line-height: 1.6rem;
+}
+.index-guns .item .circle-shape {
+  width: 4.6rem;
+  height: 4.6rem;
+  line-height: 4.6rem;
+  text-align: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #B5B5B5;
+  border-radius: 2.3rem;
+  margin-right: 2.7rem;
+  font-size: 2.5rem;
+  color: white;
+}
+.index-guns .item.fine .circle-shape {
+  background-color: #49CA8C;
+}
+.index-guns .item.break .circle-shape {
+  background-color: #FE7F19;
+}
+.index-guns .item .item-status {
+  height: 1.6rem;
+  line-height: 1.6rem;
+  display: inline-block;
+  background-image: url("../img/wait2.png");
+  background-repeat: no-repeat;
+  background-size: 1.3rem 1.6rem;
+  background-position: left center;
+  padding-left: 1.6rem;
+}
+.index-guns .item.fine .item-status {
+  background-image: url("../img/fine2.png");
+}
+.index-guns .item.break .item-status {
+  background-image: url("../img/break2.png");
+}
+.index-guns .item .item-status span:after {
+  content: "待机";
+  font-size: 0.9rem;
+}
+.index-guns .item.fine .item-status span:after {
+  content: "工作中";
+  font-size: 0.9rem;
+}
+.index-guns .item.break .item-status span:after {
+  content: "故障";
+  font-size: 0.9rem;
+}
+.index-wait-pay {
+  cursor: pointer;
+  color: #FE9019;
+  flex-grow: 0;
+}

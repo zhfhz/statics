@@ -1,0 +1,30 @@
+.i-dialog {
+  background: #fff;
+  border-radius:0.4rem;
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.i-dialog iframe {
+  display: block;
+  position: relative;
+}
+.i-dialog-mask {
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: opacity 200ms linear 0s;
+  opacity: 0.4;
+  pointer-events: all;
+  z-index: 0;
+}
+.i-dialog-stack {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}

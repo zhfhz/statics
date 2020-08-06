@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/common.layout.css" rel="stylesheet">
+    <link href="css/i.dialog.css" rel="stylesheet">
+    <link href="css/pay.css" rel="stylesheet">
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div class="pay">
+        <div class="pay-title">
+            1号枪正在现金支付
+        </div>
+        <div class="flex-row pay-content align-stretch">
+            <div class="pay-aside">
+                <div class="pay-aside-title">
+                    <span class="font-size-9 l">
+                        待支付订单
+                    </span>
+                </div>
+                <div class="h-l pay-h-l"></div>
+                <div class="scroller-container pay-aside-content">
+                    <div class="scroller">
+                        <div class="flex-row-wrap pay-wait-list">
+                            <div class="pay-wait-item active">
+                                <div class="flex-column">
+                                    <span>
+                                        <span class="font-size-9">
+                                            订单金额：
+                                        </span>
+                                        <span class="money font-size-11">210</span>
+                                    </span>
+                                    <span>
+                                        <span class="font-size-9">
+                                            数量：66
+                                        </span>
+                                    </span>
+                                    <span class="datetime">
+                                        <span class="font-size-9">
+                                            2020-04-08 14:30:26
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pay-main">
+                <div class="flex-column">
+                    <div class="pay-payment">
+                        <div class="pay-ways flex-row-wrap align-stretch">
+                            <div class="cash">
+                                <i></i>
+                                <span class="font-size-9 c">
+                                    现金
+                                </span>
+                            </div>
+                            <div class="union active">
+                                <i></i>
+                                <span class="font-size-9 c">
+                                    银联
+                                </span>
+                            </div>
+                            <div class="zhifbao">
+                                <i></i>
+                                <span class="font-size-9 c">
+                                    支付宝
+                                </span>
+                            </div>
+                            <div class="weixin">
+                                <i></i>
+                                <span class="font-size-9 c">
+                                    微信支付
+                                </span>
+                            </div>
+                            <div class="other">
+                                <i></i>
+                                <span class="font-size-9 c">
+                                    其他
+                                </span>
+                            </div>
+                        </div>
+                        <div class="pay-order">订单编号：S02020040818284200230001278750</div>
+                        <p class="pay-order-detail">
+                            <span class="font-size-11">
+                                枪号：1号枪 数量：26 金额：<span class="money">￥210</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="pay-order-operator">
+                        <div class="h-l"></div>
+                        <p class="total">
+                            <span class="font-size-11 r">
+                                订单金额：210 优惠金额：0 总计：
+                            </span><span class="money">￥210</span>
+                        </p>
+                        <div class="pay-btns">
+                            <button type="button" class="pay-cancel-btn">
+                                <span class="font-size-9 c">
+                                    取消
+                                </span>
+                                <div class="icon">
+                                    Esc
+                                </div>
+                            </button>
+                            <button type="button" class="pay-ok-btn">
+                                <span class="font-size-9 c">
+                                    结账
+                                </span>
+                                <div class="icon">
+                                    Enter
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/pay.js"></script>
+</body>
+</html>

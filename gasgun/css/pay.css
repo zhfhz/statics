@@ -1,0 +1,204 @@
+.pay {
+  padding-top: 3.4rem;
+  height: 40rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.pay-title {
+  height: 3.4rem;
+  line-height: 3.4rem;
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  background-color: #FE7F19;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.pay-content {
+  padding: 2.2rem 1.5rem;
+  height: 100%;
+  width: 80rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.pay-aside {
+  width: 38.7rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.pay-aside-title {
+  padding-left: 1rem;
+}
+.pay-aside-content {
+  height: calc(100% - 1.9rem);
+}
+.pay-aside .pay-wait-list {
+  justify-content: space-between;
+}
+.pay-aside .pay-wait-item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 12rem;
+  height: 6rem;
+  background:rgba(244,244,244,1);
+  border-radius: 0.4rem;
+  margin: 1rem 0 0;
+  box-sizing: border-box;
+}
+.pay-wait-item > .flex-column {
+  height: 100%;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+.pay-wait-item > .flex-column > * {
+  flex-grow: 0;
+  height: auto;
+}
+.pay-aside .pay-wait-item.active {
+  box-shadow: inset 0 0 0px 1px #FE9019;
+}
+.pay-aside .pay-wait-item .money {
+  color: #FE9019;
+  font-size: 1.1rem;
+}
+.pay-aside .pay-wait-item .number {
+  color: #FE9019;
+  font-size: 1.1rem;
+}
+.pay-aside .pay-wait-item .datetime {
+  color: #999;
+  white-space: nowrap;
+}
+.pay-main {
+  width: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-left: 3rem;
+  margin-right: 5.4rem;
+  padding-top: 0.8rem;
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+}
+.pay-main > .flex-column {
+  height: 100%;
+}
+.pay-main .pay-payment {
+  flex-grow: 1;
+}
+.pay-main .pay-payment {
+  height: 0;
+  flex-grow: 1;
+}
+.pay-main .pay-order-operator {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: auto;
+}
+.pay-ways {
+  height: 7.1rem;
+  justify-content: space-between;
+}
+.pay-ways > * {
+  width: 5.4rem;
+  background: #F4F4F4;
+  border-radius: 0.4rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-top: 5rem;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.pay-ways > * > i {
+  display: block;
+  height: 3.3rem;
+  position: absolute;
+  top: 1rem;
+  left: 0.6rem;
+  right: 0.6rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pay-ways > .active{
+  background: #FF8001;
+  color: white;
+}
+.pay-ways > .cash i {
+  background-image: url("../img/cash2.png");
+}
+.pay-ways > .union i{
+  background-image: url("../img/union2.png");
+}
+.pay-ways > .zhifbao i{
+  background-image: url("../img/zhifubao2.png");
+}
+.pay-ways > .weixin i{
+  background-image: url("../img/weixin2.png");
+}
+.pay-ways > .other i{
+  background-image: url("../img/other2.png");
+}
+.pay-order {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  white-space: nowrap;
+}
+.pay-order-detail {
+  margin-top: 0.7rem;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+.pay-order-detail .money {
+  color: #FE9019;
+}
+.pay-order-operator .total {
+  font-size: 1.1rem;
+  margin-top: 1.4rem;
+  text-align: right;
+}
+.pay-order-operator .total .money {
+  font-size: 1.7rem;
+  color: #FE9019;
+  vertical-align: bottom;
+}
+.pay-order-operator button {
+  outline: 0 none;
+  border: 0 none;
+}
+.pay-order-operator .pay-btns {
+  margin-top: 2.5rem;
+  text-align: right;
+}
+.pay-order-operator .pay-cancel-btn {
+  width:6rem;
+  height:4rem;
+  border:1px solid rgba(204,204,204,1);
+  background-color: transparent;
+  border-radius:0.4rem;
+}
+.pay-order-operator .pay-ok-btn {
+  width:6rem;
+  height:4rem;
+  background:rgba(255,128,1,1);
+  border-radius:0.4rem;
+  color: white;
+  margin-left: 1.9rem;
+}
+.pay-order-operator .pay-btns .icon {
+  font-size: 1.2rem;
+  line-height: 0.5rem;
+  transform-origin: center bottom;
+  transform: scale(0.5);
+}
+.pay-h-l {
+  margin-top: 1rem;
+}
+.pay-h-l::before {
+  background-color: #FE7F19;
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title>购气单位管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/common.layout.css" rel="stylesheet">
+    <link href="css/i.dialog.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/common.js"></script>
+    <script src="js/i.dialog.js"></script>
+</head>
+<body style="height: 100%; background-color: #F5F7F9;">
+    <div id="index" class="flex-row index align-stretch full-height">
+        <div class="index-aside">
+            <div class="flex-column full-height">
+                <div class="index-table">
+                    <div class="index-section">
+                        <div class="index-title">
+                            <i></i>
+                            <span class="font-size-9 l">
+                                充装记录
+                            </span>
+                            <span class="font-size-9 l">
+                                <input class="index-search" type="text" placeholder="搜索枪号" />
+                            </span>
+                        </div>
+                        <div class="scroller-container">
+                           <div class="scroller">
+                               <div>
+                                   <table class="table" cellspacing="0">
+                                       <thead>
+                                           <tr>
+                                               <th>
+                                                   <span class="font-size-9 l">
+                                                    枪号
+                                                   </span>
+                                               </th>
+                                               <th>
+                                                   <span class="font-size-9 l">
+                                                    数量
+                                                   </span>
+                                               </th>
+                                               <th>
+                                                   <span class="font-size-9 l">
+                                                    金额￥
+                                                   </span>
+                                               </th>
+                                               <th>
+                                                   <span class="font-size-9 l">
+                                                    时间
+                                                   </span>
+                                               </th>
+                                               <th>
+                                                   <span class="font-size-9 l">
+                                                    车牌
+                                                   </span>
+                                               </th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr>
+                                               <td>
+                                                   <div class="circle-shape">
+                                                       <span class="font-size-9 l">
+                                                        1
+                                                       </span>
+                                                   </div>
+                                               </td>
+                                               <td class="color-999">
+                                                   <span class="font-size-9 l">
+                                                    1
+                                                   </span>
+                                               </td>
+                                               <td>
+                                                   <span class="font-size-9 l">
+                                                    1
+                                                   </span>
+                                               </td>
+                                               <td class="color-999">
+                                                   <span class="font-size-9 l">
+                                                    1
+                                                   </span>
+                                               </td>
+                                               <td class="color-999">
+                                                   <span class="font-size-9 l">
+                                                    1
+                                                   </span>
+                                               </td>
+                                           </tr>
+
+                                       </tbody>
+                                   </table>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-total">
+                    <div class="index-section">
+                        <div class="index-title">
+                            <span class="font-size-9 l">
+                                当前班次累计
+                            </span>
+                        </div>
+                        <div class="h-l"></div>
+                        <div class="flex-row detail align-stretch">
+                            <div>
+                                <div>
+                                    <span class="font-size-9 c">
+                                        营业额
+                                    </span>
+                                </div>
+                                <div class="value">
+                                    <span class="font-size-11 c">
+                                        1111
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="v-l" style=""></div>
+                            <div>
+                                <div class="color-999">
+                                    <span class="font-size-9 c">
+                                        单数
+                                    </span>
+                                </div>
+                                <div class="value">
+                                    <span class="font-size-11 c">
+                                        231
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="v-l" style=""></div>
+                            <div>
+                                <div class="color-999">
+                                    <span class="font-size-9 c">
+                                        充装量
+                                    </span>
+                                </div>
+                                <div class="value">
+                                    <span class="font-size-11 c">
+                                        11
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-main">
+            <div class="index-section index-dash">
+                <div class="scroller-container">
+                    <div class="scroller">
+                        <!-- 四个一行， 除4取余 -->
+                        <div class="flex-row-wrap index-guns">
+                            <div class="item fine">
+                                <div class="flex-column">
+                                    <div class="item-header">
+                                        <div class="flex-row align-stretch">
+                                            <div class="circle-shape">
+                                                1
+                                            </div>
+                                            <div class="flex-column count">
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       金额：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           123
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       数量：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           1234
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-foot">
+                                        <div class="flex-row">
+                                            <span class="font-size-9 l">
+                                               <span class="item-status">
+                                                   <span class="font-size-9 l"></span>
+                                               </span>
+                                            </span>
+                                            <span class="index-wait-pay">
+                                                <span class="font-size-9 r">
+                                                   待支付数： 12
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item break">
+                                <div class="flex-column">
+                                    <div class="item-header">
+                                        <div class="flex-row align-stretch">
+                                            <div class="circle-shape">
+                                                1
+                                            </div>
+                                            <div class="flex-column count">
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       金额：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           123
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       数量：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           1234
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-foot">
+                                        <div class="flex-row">
+                                            <span class="font-size-9 l">
+                                               <span class="item-status">
+                                                   <span class="font-size-9 l"></span>
+                                               </span>
+                                            </span>
+                                            <span class="index-wait-pay">
+                                                <span class="font-size-9 r">
+                                                   待支付数： 12
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex-column">
+                                    <div class="item-header">
+                                        <div class="flex-row align-stretch">
+                                            <div class="circle-shape">
+                                                1
+                                            </div>
+                                            <div class="flex-column count">
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       金额：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           123
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       数量：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           1234
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-foot">
+                                        <div class="flex-row">
+                                            <span class="font-size-9 l">
+                                               <span class="item-status">
+                                                   <span class="font-size-9 l"></span>
+                                               </span>
+                                            </span>
+                                            <span class="index-wait-pay">
+                                                <span class="font-size-9 r">
+                                                   待支付数： 12
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex-column">
+                                    <div class="item-header">
+                                        <div class="flex-row align-stretch">
+                                            <div class="circle-shape">
+                                                1
+                                            </div>
+                                            <div class="flex-column count">
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       金额：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           123
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       数量：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           1234
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-foot">
+                                        <div class="flex-row">
+                                            <span class="font-size-9 l">
+                                               <span class="item-status">
+                                                   <span class="font-size-9 l"></span>
+                                               </span>
+                                            </span>
+                                            <span class="index-wait-pay">
+                                                <span class="font-size-9 r">
+                                                   待支付数： 12
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex-column">
+                                    <div class="item-header">
+                                        <div class="flex-row align-stretch">
+                                            <div class="circle-shape">
+                                                1
+                                            </div>
+                                            <div class="flex-column count">
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       金额：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           123
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                                <div>
+                                                    <span class="font-size-11 l">
+                                                       数量：
+                                                    </span>
+                                                    <div class="pull-right">
+                                                        <span class="font-size-11 r">
+                                                           1234
+                                                        </span>
+                                                    </div>
+                                                    <br clear="both" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-foot">
+                                        <div class="flex-row">
+                                            <span class="font-size-9 l">
+                                               <span class="item-status">
+                                                   <span class="font-size-9 l"></span>
+                                               </span>
+                                            </span>
+                                            <span class="index-wait-pay">
+                                                <span class="font-size-9 r">
+                                                   待支付数： 12
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
