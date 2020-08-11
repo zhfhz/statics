@@ -17,7 +17,7 @@
   var responsiveFunc = function () {
     var width = window.screen.width;
     var remRate = 10/1366; // 按设计稿1366x768还原，1rem = 10px;
-    var rootFontSizeShouldBe = width * remRate;
+    var rootFontSizeShouldBe = width * remRate / window.devicePixelRatio;
     document.getElementsByTagName('html')[0].style.fontSize = rootFontSizeShouldBe + 'px';
     /**
      * 适配小于12px的字号
